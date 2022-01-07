@@ -1,0 +1,144 @@
+:root {
+  /* primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* neutral */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale-blue);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-blue-font {
+  color: var(--dark-blue);
+}
+
+.desaturated-blue-font {
+  color: var(--desaturated-blue);
+}
+
+.pale-blue-font {
+  color: var(--pale-blue);
+}
+.very-pale-blue-font {
+  color: var(--very-pale-blue);
+}
+.bright-blue-font {
+  color: var(--bright-blue);
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.container {
+  width: 25%;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.container .hero-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.container h2 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.container p {
+  width: 70%;
+  margin: 0 auto;
+  font-weight: 500;
+  line-height: 2;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.container .plan-section {
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.container .plan-section div.flex-container.flex-column {
+  gap: 5px;
+}
+
+.order-buttons {
+  align-items: center;
+  gap: 35px;
+}
+
+.payment-btn {
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  width: 80%;
+  color: #fff;
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  box-shadow: 0px 10px 50px -5px var(--desaturated-blue);
+}
+
+.cancel-btn {
+  cursor: pointer;
+  text-decoration: none;
+  padding-bottom: 30px;
+  font-size: 0.9rem;
+}
+
+.plan-section a:hover,
+.cancel-btn:hover {
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+.payment-btn:hover {
+  background-color: var(--dark-blue);
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: 80%;
+  }
+}
